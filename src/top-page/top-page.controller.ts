@@ -10,6 +10,7 @@ import {
 } from '@nestjs/common';
 import { TopPageModel } from './top-page.model';
 import { FindTopPageDto } from './dto/find-top-page.dto';
+import { ConfigService } from '@nestjs/config';
 
 @Controller('top-page')
 export class TopPageController {
