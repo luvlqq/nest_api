@@ -1,4 +1,5 @@
-import { IsNumber, IsString, Max, Min } from 'class-validator';
+import { IsNumber, IsString, Max } from 'class-validator';
+import { Min } from 'class-validator';
 
 export class CreateReviewDto {
   @IsString()
@@ -15,7 +16,4 @@ export class CreateReviewDto {
   rating: number;
   @IsString()
   productId: string;
-}
-function Min(arg0: number) {
-  throw new Error('Function not implemented.');
 }

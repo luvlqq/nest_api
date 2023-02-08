@@ -39,4 +39,11 @@ describe('AppController (e2e)', () => {
         done();
       });
   });
+
+  it('/review/create (POST) - fail', async (done) => {
+    return request(app.getHttpServer())
+      .post('/review/create')
+      .send({ ...testDto, rating: 0 })
+      .expect(400);
+  });
 });

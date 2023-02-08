@@ -1,0 +1,1 @@
+export const ALREDY_REGISTRED_ERROR = 'Пользователь с таким именем уже был зарегистрирован';
